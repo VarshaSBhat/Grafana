@@ -84,9 +84,7 @@ resource "grafana_rule_group" "my_rule_group" {
         }
         data {
             datasource_uid = "__expr__"
-            // You can also create a rule in the UI, then GET that rule to obtain the JSON.
-            // This can be helpful when using more complex reduce expressions.
-            model = <<EOT
+             model = <<EOT
 {"conditions":[{"evaluator":{"params":[0,0],"type":"gt"},"operator":{"type":"and"},"query":{"params":["A"]},"reducer":{"params":[],"type":"last"},"type":"avg"}],"datasource":{"name":"Expression","type":"__expr__","uid":"__expr__"},"expression":"A","hide":false,"intervalMs":1000,"maxDataPoints":43200,"reducer":"last","refId":"B","type":"reduce"}
 EOT
             ref_id = "B"
