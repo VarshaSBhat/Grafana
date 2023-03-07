@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"prometheus-stack","Source":"registry.terraform.io/sparkfabrik/prometheus-stack/sparkfabrik","Version":"1.1.0","Dir":".terraform/modules/prometheus-stack"}]}
